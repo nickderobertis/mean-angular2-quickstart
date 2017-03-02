@@ -4,6 +4,15 @@
  * and open the template in the editor.
  */
 
+//Set environement variables
+//Create a file called .env in the project root directory containing e.g.
+//USER=joe
+//PASS=thisisapassword
+//HOST=localhost
+//DB_PORT=5000
+//DB=mydb
+require('dotenv').load();
+
 // Get dependencies
 const express = require('express');
 const path = require('path');

@@ -4,13 +4,21 @@
  * and open the template in the editor.
  */
 
-
+//Load external dependencies
 const express = require('express');
 const router = express.Router();
-
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://frontend:thisisalongpassword@ds041566.mlab.com:41566/rmg-db');
+
+//Load local dependencies
+const tools = require('./tools');
+
+//Load our models
 const User = require('../models/user');
+
+//Connect to db
+const dbUri = tools.getMongoUri();
+mongoose.connect(dbUri);
+
 
 /* GET api listing. */
 router.get('/', (req, res) => {
