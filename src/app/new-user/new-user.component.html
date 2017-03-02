@@ -2,9 +2,14 @@
   Create user
 </h2>
 <form (ngSubmit)="newUser()" #newUserForm="ngForm">
+<label for='name'>Name: </label>
+<input type="text" id="name" [(ngModel)]="model.name" name='name' required>
 <label for='username'>Username: </label>
 <input type="text" id="username" [(ngModel)]="model.username" name='username' required>
 <label for='password'>Password: </label>
 <input type="password" id="password" [(ngModel)]="model.password" name='password' required>
-<button type="submit" [disabled]="!newUserForm.form.valid">Sign In ></button>
+<button type="submit" [disabled]="!newUserForm.form.valid">Create User ></button>
 </form>
+
+<button (click)="showUsers()">Show Users</button>
+<p *ngFor="let user of users">{{user | json}}</p>
