@@ -1,0 +1,10 @@
+<h2>
+  Create user
+</h2>
+<form (ngSubmit)="newUser()" #newUserForm="ngForm">
+<label for='username'>Username: </label>
+<input type="text" id="username" [(ngModel)]="model.username" name='username' required>
+<label for='password'>Password: </label>
+<input type="password" id="password" [(ngModel)]="model.password" name='password' required>
+<button type="submit" [disabled]="!newUserForm.form.valid">Sign In ></button>
+</form>

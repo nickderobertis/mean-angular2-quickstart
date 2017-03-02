@@ -24,9 +24,9 @@ var userSchema = new Schema({
 // you can create more important methods like name validations or formatting
 // you can also modify attributes of the user
 // you can also do queries and find similar users 
-//userSchema.methods.greeting = function() {
-//  return 'Hello ' + this.name; 
-//};
+userSchema.methods.greeting = function() {
+  return 'Hello ' + this.name; 
+};
 
 // on every save, add the date
 userSchema.pre('save', function(next) {
