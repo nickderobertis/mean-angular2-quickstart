@@ -4,13 +4,16 @@ An Angular 2 quick start combined with Express and ready to be hooked up to a Mo
 set up your MongoDB separately (e.g. with [Mlab](https://mlab.com/)), then create a .env file specifying your
 database details.
 
-Clone from Github for a local version
-Clone from Gomix for a live, hosted version
+Clone from [Github](https://github.com/whoopnip/mean-angular2-quickstart) for a local version
+
+Clone from [Gomix](https://gomix.com/#!/project/mean-angular2-quickstart) for a live, hosted version
 
 Uses Mongoose to hook up to MongoDB. Includes an example Schema and corresponding Angular component and model.
 
 I can't take credit for the Express and Mongoose code. These parts were mostly copied from the wonderful tutorials by:
+
 [Ganga Chris](https://scotch.io/tutorials/mean-app-with-angular-2-and-the-angular-cli) and
+
 [Chris Sevilleja](https://scotch.io/tutorials/using-mongoosejs-in-node-js-and-mongodb-applications) 
 
 The Angular 2 was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.0.
